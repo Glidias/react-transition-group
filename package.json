@@ -8,6 +8,7 @@
     "tdd": "jest --watch",
     "build": "rimraf lib && babel src --out-dir lib && npm run build:dist",
     "build:dist": "rimraf lib/dist && webpack && NODE_ENV=production webpack -p",
+    "prepare": "npm run build",
     "lint": "eslint src test",
     "release": "release"
   },
